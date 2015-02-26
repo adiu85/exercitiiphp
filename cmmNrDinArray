@@ -1,0 +1,23 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: user
+ * Date: 2/26/15
+ * Time: 4:13 PM
+ * sa se faca un program / functie care sa returneze cel mai mare nr dintr un array.
+ */
+
+
+$a = array("2", "7", "1", "5", "3", "9");
+$a_count = count($a);
+$max=0;
+function isMax($max,$a,$a_count){
+for ($i = 0; $i < $a_count; $i++) {
+    if ($a[$i] > $max) {
+        $max = $a[$i];
+    }
+}
+print "cel mai mare numar este " . $max;
+}
+isMax(0,$a,$a_count);
+?>
